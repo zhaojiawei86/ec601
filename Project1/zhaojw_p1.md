@@ -20,8 +20,8 @@ CNN is a kind of digitally driven self-supervision model and consists of an inpu
 
 Except for receiving more imaging instances, transfer learning (TL) can also assist improving performance of AI diagnosis(Valverde et al., 2021). TL stores knowledge while solving one problem and applies it to another related field(Day and Khoshgoftaar, 2017). For instance, a model trained for brain extraction could also be used in recognizing tumor segmentation. A literature search showed that, a majority of articles applied CNNs (Convolutional neural networks) and transfer learning to MR brain imaging tasks (Figure 1) (Valverde et al., 2021).  
 
+<img src="https://github.com/zhaojiawei86/ec601/blob/main/Project1/Figure1.png" width = "450" height = "350"/>
 
-![Alt text](https://github.com/zhaojiawei86/ec601/blob/main/Project1/Figure1.png "Figure 1. Number of articles applied transfer learning to MR brain imaging task based on Machine Learning (Valverde et al., 2021)")  
 Figure 1. Number of articles applied transfer learning to MR brain imaging task based on Machine Learning (Valverde et al., 2021)
 
 
