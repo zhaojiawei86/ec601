@@ -1,5 +1,6 @@
 ## Red sox Sentiment Analysis on Twitter
 Jiawei Zhao, zhaojw@bu.edu  
+
 The Boston Red Sox are an American professional baseball team based in Boston. I am going to use Python library - Tweepy - for accessing the Twitter API to analyse what people think about the performance of Red Sox recently.
 
 ### 1. Tweets Search
