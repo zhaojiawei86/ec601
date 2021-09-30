@@ -6,10 +6,10 @@ from nltk.tokenize import WordPunctTokenizer
 import pandas as pd
 
 # Authentication
-apiKey = "mi3IsHw1lzA9KlstGoEi4sQSu"
-apiSecret = "0obn2WECJqrZt5eoYJoOY5HbHCQfa5Xe6PFW58EG3AEqF4dxUM"
-accessToken = "1441571989357957122-eksbtpbuyFyQiMnIm9t3DOkILvzXLV" 
-accessTokenSecret = "aLssavUn0tPln5czeoWaVcf0UYSRYAoenbyBIdf7TPvBE"
+apiKey = ""
+apiSecret = ""
+accessToken = "" 
+accessTokenSecret = ""
 auth = tweepy.OAuthHandler(apiKey, apiSecret)
 auth.set_access_token(accessToken, accessTokenSecret)
 api = tweepy.API(auth)
@@ -39,7 +39,6 @@ tw_list["text"] = tw_list[0]
 # print(tw_list.head(10))
 
 #Cleaning Text (RT, Punctuation etc)
-
 #Creating new dataframe and new features
 tw_list = pd.DataFrame(tweet_list)
 tw_list["text"] = tw_list[0]
@@ -51,6 +50,7 @@ tw_list["text"] = tw_list.text.map(remove_rt).map(rt)
 tw_list["text"] = tw_list.text.str.lower()
 # print(tw_list.head(10))
 
+# sentiment analysis
 for index, tweet in tw_list['text'].iteritems():
     document = language_v1.Document(content=tweet.encode('utf-8'), type_=language_v1.Document.Type.PLAIN_TEXT)
     sentiment = client.analyze_sentiment(request={'document': document}).document_sentiment
