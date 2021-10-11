@@ -1,1 +1,49 @@
+# Social Media Sentiment Analyzer
+Jiawei Zhao  
+zhaojw@bu.edu
 
+In this report, I'm going to introduce a social media analyzer that could help people analyze the sentiment of specific keywords. In this way, people could find others' comments as well as attitude towards what they care about. This product is designed by using Twitter API and Google NLP API.
+
+## Users
+This analyzer could be used by three groups of people:
+1. Used by Product Manager or Data Analyzer in companies;
+2. Used by students or researchers in university or scientific institution;
+3. Used by the public who are interested in analyzing sentiment of daily products.
+
+## User Stories
+As a Data Analyzer or Product Manager,
+1. When they publish a new version of application or function of their products, they will care about the users' using experiments. They hope to use the sentiment analyzer to find the feedback of their new product which could help them decide whether it is a useful function or just give it up.
+2. A product Data Analyzer or Product Manager will also want to know more of their past products. The change of analyzer's result could help them to improve the existed products. 
+
+As a student or researcher,
+1. Want to learn more about sentiment analyzer, the best way is to familier with others' code first.
+2. Already had a model of theirselves, and decided to improve their model, so they want to compare theirs with other products.
+
+As the public,  
+When a consumer wants to know more about a new product, just like iphone 13. They will use the analyzer to find the comments of other consumers, according to the analyze result, they will decide whether they could buy this new product.
+
+## MVP
+According to user stories, I find that the most important function of this analyzer is:
+1. Could get the detail comments or attitude of specific keyword;
+2. Could get the result of sentiment analyze, like the percentage of positive or negative sentiment;
+3. Could get the change of attitude toward the same product periodly;
+4. Could supply open source code and dataset.
+
+## Modular Design
+This product is used for sentiment analyzing when users input keywords what they want. So the thing the users need to do is just pass the word they want to search in the input box. Finally, they will get the content of the related tweets, the sentiment points toward these text as well as the analyze result.
+All the code information will be hided from the users.
+
+## Introdcution of Product
+I will take the product of dropbox as an example to introduce my product.
+I set "dropbox" as the keyword and want to get 1500 tweets to analyze.In this step, we collected 1500 original tweets, and finally get ... cleaned unique text.
+
+By calculating polarity, subjectivity, sentiment, negative, positive, neutral and compound parameters of the texts, I get a new feature of the list, sentiment. Based on the sentiment parameter, the texts are seperated in three group which means negative list, positive list and neutral list respectively.
+
+I also use Google Natural Language API to get a tweet’s sentiment. In Google’s Sentiment Analysis, sentiment score is the score of the sentiment ranges from -1.0 (very negative) to 1.0 (very positive). Based on the sentiment parameter, the texts are labeled in negative, neutral or positive.
+
+Finally, we can find recently there are 31.27% users had negative comments on dropbox.
+
+In this report, 1500 tweets related to "dropbox" are collected and finally 1161 clean texts are extrated by pretreatment. Additionally, a new feature "Sentiment" is calculated by sentiment analysis. We find that about 1/3 of people have negative attitude according to Google NLP API, and 1/3 of people have negative attitude calculated by using twitter API tool. 
+
+## Discussion
+Sentiment analyze of these two APIs have different sentiment result. Further research is needed to evaluate and combine the result of both API. 
