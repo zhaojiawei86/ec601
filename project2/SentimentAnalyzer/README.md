@@ -24,26 +24,30 @@ When a consumer wants to know more about a new product, just like iphone 13. The
 
 ## MVP
 According to user stories, I find that the most important function of this analyzer is:
+1. Could input the keyword as well as the number of tweets what the users want;
 1. Could get the detail comments or attitude of specific keyword;
 2. Could get the result of sentiment analyze, like the percentage of positive or negative sentiment;
-3. Could get the change of attitude toward the same product periodly;
+3. Could get the change of attitude toward the same product periodly
 4. Could supply open source code and dataset.
 
 ## Modular Design
 This product is used for sentiment analyzing when users input keywords what they want. So the thing the users need to do is just pass the word they want to search in the input box. Finally, they will get the content of the related tweets, the sentiment points toward these text as well as the analyze result.
 All the code information will be hided from the users.
 
-## Introdcution of Product
-I will take the product of dropbox as an example to introduce my product.
-I set "dropbox" as the keyword and want to get 1500 tweets to analyze.In this step, we collected 1500 original tweets, and finally get ... cleaned unique text.
+## Introduction of Product
+I will take the new function of Wechat application in China called "wechat status" as an example to introduce my product.
+I set "wechat status" as the keyword and want to get 1000 tweets to analyze.In this step, we collected 1000 original tweets, and finally get 419 cleaned unique text.
 
 By calculating polarity, subjectivity, sentiment, negative, positive, neutral and compound parameters of the texts, I get a new feature of the list, sentiment. Based on the sentiment parameter, the texts are seperated in three group which means negative list, positive list and neutral list respectively.
 
 I also use Google Natural Language API to get a tweet’s sentiment. In Google’s Sentiment Analysis, sentiment score is the score of the sentiment ranges from -1.0 (very negative) to 1.0 (very positive). Based on the sentiment parameter, the texts are labeled in negative, neutral or positive.
 
-Finally, we can find recently there are 31.27% users had negative comments on dropbox.
+Finally, we can find recently there are 2.15% (by using Google NLP) and 12.17% (by using twitter API) users had negative comments on wechat status. 
 
-In this report, 1500 tweets related to "dropbox" are collected and finally 1161 clean texts are extrated by pretreatment. Additionally, a new feature "Sentiment" is calculated by sentiment analysis. We find that about 1/3 of people have negative attitude according to Google NLP API, and 1/3 of people have negative attitude calculated by using twitter API tool. 
+![image](https://user-images.githubusercontent.com/59852184/137636598-bfb9757c-4a6a-4c8e-b5d8-08a5a4cf24c3.png)
 
 ## Discussion
-Sentiment analyze of these two APIs have different sentiment result. Further research is needed to evaluate and combine the result of both API. 
+Sentiment analyze of these two APIs have different sentiment result. Otherwise, there still some tweets cannot be analyzed by Google NLP. Also, sometimes Google NLP will give warnings like "Language ca is not supported", which will stop the analysis.
+![image](https://user-images.githubusercontent.com/59852184/137636237-99a5e5a3-2649-47e8-845e-005a94fdc159.png)
+Further research is needed to evaluate and combine the result of both API. 
+
