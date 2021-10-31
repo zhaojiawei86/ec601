@@ -54,9 +54,11 @@ The program could also do some tests.
 
 ## Discussion
 I choose Twitter API to do Sentiment analyzing because there are some tweets cannot be analyzed by Google NLP. These tweets are labeled as nah by google nlp. Also, sometimes Google NLP will give warnings like "Language ca is not supported", which will stop the analysis.
+Wechat is a Chinese APP. Twitter API sentiment analyzer would be much useful because it could support more languages.
+Further research is needed to evaluate and combine the result of both API.   
+
 ![图片](https://user-images.githubusercontent.com/59852184/139601759-69e811cb-1691-46f8-9489-5822007a7487.png)
 ![image](https://user-images.githubusercontent.com/59852184/137636237-99a5e5a3-2649-47e8-845e-005a94fdc159.png)  
 
-Wechat is a Chinese APP. Twitter API sentiment analyzer would be much useful because it could support more languages.
-Further research is needed to evaluate and combine the result of both API. 
+
 
