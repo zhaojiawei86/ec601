@@ -17,8 +17,8 @@ def get_authen():
     accessTokenSecret = os.getenv('accessTokenSecret')
     auth = tweepy.OAuthHandler(apiKey, apiSecret)
     auth.set_access_token(accessToken, accessTokenSecret)
-    api = tweepy.API(auth)
-#     api =tweepy.API(auth,wait_on_rate_limit=True)
+#     api = tweepy.API(auth)
+    api =tweepy.API(auth,wait_on_rate_limit=True)
     return api
 
 def get_keyword():
