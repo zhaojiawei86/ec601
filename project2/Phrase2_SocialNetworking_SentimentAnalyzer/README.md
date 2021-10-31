@@ -4,13 +4,14 @@ zhaojw@bu.edu
 
 In this report, I'm going to introduce a social media analyzer that could help people analyze the sentiment of specific keywords. In this way, people could find others' comments as well as attitude towards what they care about. This product is designed by using Twitter API.
 
-## Users
+## Design
+### Users
 This analyzer could be used by three groups of people:
 1. Used by Product Manager or Data Analyzer in companies;
 2. Used by students or researchers in university or scientific institution;
 3. Used by the public who are interested in analyzing sentiment of daily products.
 
-## User Stories
+### User Stories
 As a Data Analyzer or Product Manager,
 1. When they publish a new version of application or function of their products, they will care about the users' using experiments. They hope to use the sentiment analyzer to find the feedback of their new product which could help them decide whether it is a useful function or just give it up.
 2. A product Data Analyzer or Product Manager will also want to know more of their past products. The change of analyzer's result could help them to improve the existed products. 
@@ -22,7 +23,7 @@ As a student or researcher,
 As the public,  
 When a consumer wants to know more about a new product, just like iphone 13. They will use the analyzer to find the comments of other consumers, according to the analyze result, they will decide whether they could buy this new product.
 
-## MVP
+### MVP
 According to user stories, I find that the most important function of this analyzer is:
 1. Could input the keyword as well as the number of tweets what the users want;
 1. Could get the detail comments or attitude of specific keyword;
@@ -30,7 +31,7 @@ According to user stories, I find that the most important function of this analy
 3. Could get the change of attitude toward the same product periodly
 4. Could supply open source code and dataset.
 
-## Modular Design
+### Modular Design
 This product is used for sentiment analyzing when users input keywords what they want. So the thing the users need to do is just pass the word they want to search in the input box. Finally, they will get the content of the related tweets, the sentiment points toward these text as well as the analyze result.
 All the code information will be hided from the users.
 
@@ -45,6 +46,15 @@ By calculating polarity, subjectivity, sentiment, negative, positive, neutral an
 Finally, we can find recently there are 9.09% (by using twitter API) users had negative comments on wechat status. 
 ![图片](https://user-images.githubusercontent.com/59852184/139601697-bab0a6a6-b84c-40c7-a269-a8ec40f80cdc.png)
 
+## Errors and Solutions
+1. tweepy.errors.TooManyRequests: 429 Too Many Requests  
+The 429 code is returned when a request cannot be served due to the application’s rate limit having been exhausted for the resource. But I try to use API 15 calls every 15 minutes. It still not work. Then I found for the latest versions of Tweepy (from 3.2.0), the wait_on_rate_limit has been introduced.
+If set to True, it allows to automatically avoid this problem.
+
+2. 400 The language ca is not supported for document_analyze  
+![图片](https://user-images.githubusercontent.com/59852184/139601759-69e811cb-1691-46f8-9489-5822007a7487.png)
+![image](https://user-images.githubusercontent.com/59852184/137636237-99a5e5a3-2649-47e8-845e-005a94fdc159.png)  
+Some tweets are labeled as nah and cannot be analyzed by Google NLP. Also, sometimes Google NLP will give warnings like "Language ca is not supported", which will stop the analysis. Wechat is a Chinese APP. Twitter API sentiment analyzer which support more languages would be useful.
 
 ## Testing
 The program could also do some tests.
@@ -52,15 +62,3 @@ The program could also do some tests.
 2. If users input non-integer as the number of tweets or input a number too much, Twitter API will output errors too. Instead of disunderstanding program errors, my program will check the input, give a remind and pass the input until users give a correct form.
 3. There is a request limitation for twitter API, 15 requests in 15 minutes. In order to remind users before they over searching, my program will calculate searching times in 15 minutes and give a remind to users.
 ![图片](https://user-images.githubusercontent.com/59852184/139601997-8d6f3534-f0a4-4578-806c-8304aa62cc80.png)
-
-
-## Discussion
-I choose Twitter API to do Sentiment analyzing because there are some tweets cannot be analyzed by Google NLP. These tweets are labeled as nah by google nlp. Also, sometimes Google NLP will give warnings like "Language ca is not supported", which will stop the analysis.
-Wechat is a Chinese APP. Twitter API sentiment analyzer would be much useful because it could support more languages.
-Further research is needed to evaluate and combine the result of both API.   
-
-![图片](https://user-images.githubusercontent.com/59852184/139601759-69e811cb-1691-46f8-9489-5822007a7487.png)
-![image](https://user-images.githubusercontent.com/59852184/137636237-99a5e5a3-2649-47e8-845e-005a94fdc159.png)  
-
-
-
