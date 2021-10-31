@@ -26,9 +26,6 @@ jobs:
         pip install tweepy
         pip install TextBlob
         pip install pandas
-        git clone https: //github.com/tweepy/tweepy.git
-        cd tweepy
-        pip install.
     - name: Run Test
       env:
           apiKey: ${{ secrets.apiKey }}
