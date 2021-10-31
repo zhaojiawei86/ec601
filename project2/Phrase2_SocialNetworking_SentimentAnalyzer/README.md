@@ -45,6 +45,8 @@ By calculating polarity, subjectivity, sentiment, negative, positive, neutral an
 Finally, we can find recently there are 9.09% (by using twitter API) users had negative comments on wechat status. 
 ![图片](https://user-images.githubusercontent.com/59852184/139601697-bab0a6a6-b84c-40c7-a269-a8ec40f80cdc.png)
 
+
+## Testing
 The program could also do some tests.
 1. If there is 0 tweet found, the program will give a warning instead of program errors and stop the analyzing. This could help tell the users why analyzing is not worked.
 2. If users input non-integer as the number of tweets or input a number too much, Twitter API will output errors too. Instead of disunderstanding program errors, my program will check the input, give a remind and pass the input until users give a correct form.
