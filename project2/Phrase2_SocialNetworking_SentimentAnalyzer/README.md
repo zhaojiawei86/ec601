@@ -36,7 +36,7 @@ All the code information will be hided from the users.
 
 ## Introduction of Product
 I will take the new function of Wechat application in China called "wechat status" as an example to introduce my product.
-I set "wechat status" as the keyword and want to get 500 tweets to analyze.In this step, we collected 500 original tweets, and finally get 187 cleaned unique text.
+I set "wechat status" as the keyword and want to get 500 tweets to analyze.In this step, we collected 500 original tweets, and finally get 187 cleaned unique text.  
 ![图片](https://user-images.githubusercontent.com/59852184/139601639-a8214b2f-0482-4440-a4cf-81705654cca0.png)
 
 By calculating polarity, subjectivity, sentiment, negative, positive, neutral and compound parameters of the texts, I get a new feature of the list, sentiment. Based on the sentiment parameter, the texts are seperated in three group which means negative list, positive list and neutral list respectively.
@@ -44,6 +44,13 @@ By calculating polarity, subjectivity, sentiment, negative, positive, neutral an
 
 Finally, we can find recently there are 9.09% (by using twitter API) users had negative comments on wechat status. 
 ![图片](https://user-images.githubusercontent.com/59852184/139601697-bab0a6a6-b84c-40c7-a269-a8ec40f80cdc.png)
+
+The program could also do some tests.
+1. If there is 0 tweet found, the program will give a warning instead of program errors and stop the analyzing. This could help tell the users why analyzing is not worked.
+2. If users input non-integer as the number of tweets or input a number too much, Twitter API will output errors too. Instead of disunderstanding program errors, my program will check the input, give a remind and pass the input until users give a correct form.
+3. There is a request limitation for twitter API, 15 requests in 15 minutes. In order to remind users before they over searching, my program will calculate searching times in 15 minutes and give a remind to users.
+![图片](https://user-images.githubusercontent.com/59852184/139601997-8d6f3534-f0a4-4578-806c-8304aa62cc80.png)
+
 
 ## Discussion
 I choose Twitter API to do Sentiment analyzing because there are some tweets cannot be analyzed by Google NLP. These tweets are labeled as nah by google nlp. Also, sometimes Google NLP will give warnings like "Language ca is not supported", which will stop the analysis.
