@@ -35,4 +35,3 @@ jobs:
       run: |
         cd project2/test
         python twi_api.py
-        python test_twi_api.py
