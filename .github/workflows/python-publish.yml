@@ -26,12 +26,12 @@ jobs:
         pip install tweepy
         pip install TextBlob
         pip install pandas
-    - name: Run twi_api
+    - name: Run Test
       env:
           apiKey: ${{ secrets.apiKey }}
           apiSecret:  ${{ secrets.apiSecret }} 
           accessToken: ${{ secrets.accessToken }}
           accessTokenSecret: ${{ secrets.accessTokenSecret }} 
       run: |
-        cd project2/test
-        python twi_api.py
+        cd project2/Phrase2_SocialNetworking_SentimentAnalyzer/Unix_Test
+        python Test_SentimentAnalyzer.py
