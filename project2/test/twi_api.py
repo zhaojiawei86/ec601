@@ -116,7 +116,7 @@ if __name__ == "__main__":
         end_time = time.time()
         search_limit_alert(end_time - start_time, search_num)
         keyword = "red sox"
-        numOfTweet = 10
+        numOfTweet = 2
         tweet_list = get_twi_list(keyword, numOfTweet)
         tw_list = sentiment_analyze(tweet_list)
         search_num = search_num + 1
