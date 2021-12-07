@@ -1,71 +1,83 @@
-# Web Accessibility and Society Impact
-Jiawei Zhao, College of Engineering, Boston University
+# Accessibility Design and User Experience  
+Jiawei Zhao
 
 
-## 1. Introduction
+Faced with different user groups, products need to be warming and to meet the needs of different user groups. The realization of barrier-free design can allow products to take into account more diversified use scenarios, improve user experience, and help themselves improve the usability and practicality of products.  
 
-When websites and web tools are properly designed and coded, people with disabilities can use them. However, currently many sites and tools are developed with accessibility barriers that make them difficult or impossible for some people to use.
-
-Web accessibility is the inclusive practice of ensuring there are no barriers that prevent interaction with, or access to, websites on the World Wide Web by people with physical disabilities, situational disabilities, and sociology-economic restrictions on bandwidth and speed. When sites are correctly designed, developed and edited, more users have equal access to information and functionality. 
-
-Web accessibility depends on several components working together, including web technologies, web browsers and other "user agents", authoring tools, and websites.
-The W3C Web Accessibility Initiative (WAI) develops technical specifications, guidelines, techniques, and supporting resources that describe accessibility solutions. 
-
-## 2. Essential Components Design of Web Accessibility
-
-It is essential that several different components of web development and interaction work together in order for the web to be accessible to people with disabilities. These components include:  
-
-    • content - the information in a web page or web application, including:   
-        ◦ natural information such as text, images, and sounds   
-        ◦ code or markup that defines structure, presentation, etc.   
-    • web browsers, media players, and other “user agents”   
-    • assistive technology, in some cases - screen readers, alternative keyboards, switches, scanning software, etc.   
-    • users’ knowledge, experiences, and in some cases, adaptive strategies using the web   
-    • developers - designers, coders, authors, etc., including developers with disabilities and users who contribute content   
-    • authoring tools - software that creates websites   
-    • evaluation tools - web accessibility evaluation tools, HTML validators, CSS validators, etc.   
-
-## 3. Content Component
-
-Content authors need to provide alternative forms of the content. For example, at least some level of human intervention is necessary to create textual descriptions for images and captions for audio content. Sometimes software tools, such as voice and picture recognition, can assist authors in providing such alternatives but the conversion is usually not fully automatable.
-
-There’s some Examples of content accessibility features
-
-    • Audio descriptions – (also referred to as “video descriptions” and “described video”) narrations that describe important visual details in a video. These narrations can be during natural pauses in the audio, or in separate audio files or audio tracks in multimedia. 
-    • Auditory, tactile, and visual notifications - prompting or alerting the user in different ways such as by blinking or displaying visual dialogs, by using sound, or by vibration. 
-    • Braille – a system using six to eight raised dots in various patterns, to represent letters and numbers. These characters are read by scanning over the raised dots using the fingertips. Braille is used by people who are blind but not all individuals who are blind know braille. 
-    • Captions – text with a verbatim recording of any speech and with descriptions of relevant auditory information that appears simultaneously with the audio (including audio that accompanies video in multimedia). For real-time captioning typically professional CART writers are necessary. 
-    • Text-to-speech (sometimes called “speech synthesis” or “speech output”) - automatic conversion of text into a synthesized voice reading the text aloud. 
-    • Transcripts – text manuscripts containing the correct sequence of verbatim recording of any speech, and descriptions of important auditory or visual information. 
-
-Just as images aren’t available to people who can’t see, audio files aren’t available to people who can’t hear. Providing a text transcript makes the audio information accessible to people who are deaf or hard of hearing, as well as to search engines and other technologies that can’t hear.
-
-It’s easy and relatively inexpensive for websites to provide transcripts. There are also transcription services that create text transcripts in HTML format.
-      
-## 4. Stories of Web Users in Transcripts
-
-Martine is 62 years old and has been hard of hearing since birth. She can hear some sounds, but not enough to understand speech. As a child she learned sign language and during her early school years learned written language. She is currently a student again, taking online college courses.
-
-The university she attends provides sign language interpreters and Communication Access Realtime Translation (CART) writers who provide written verbatim text interpreting of spoken language for her courses. However, Martine has encountered barriers when video and other media content are not captioned. The university became aware of the need and requirement to provide captioned media and transcripts for audio content and is now working with a captioning provider to caption all content posted on university websites, including all course content in learning management systems. In addition to providing access to the content for students who are deaf or hard of hearing, the university has found that the use of captions and transcripts has added benefits. Transcripts facilitate easier production of subtitles in a number of languages and also improve the indexing of online content. Improved indexing provides improved search engine optimization and improved discoverability of the university’s online content. The university follows WCAG guidelines in providing the captioned content.
-
-## 5. Impact of Web Accessibility
-
-The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with diverse abilities. Access to information and communications technologies, including the Web, is defined as a basic human right in the United Nations Convention on the Rights of Persons with Disabilities (UN CRPD).
-
-The Web offers the possibility of unprecedented access to information and interaction for many people with disabilities. That is, the accessibility barriers to print, audio, and visual media can be much more easily overcome through web technologies.
-
-Accessibility supports social inclusion for people with disabilities as well as others, such as:
-
-    • older people
-    • people in rural areas
-    • people in developing countries
-
-There is also a strong business case for accessibility. As shown in the previous section, accessible design improves overall user experience and satisfaction, especially in a variety of situations, across different devices, and for older users. Accessibility can enhance your brand, drive innovation, and extend your market reach.
+Keywords: Visual Barrier, Accessibility Design, Website Accessibility, User Experience
 
 
+## Introduction
+
+The concept of accessibility was created in 1974 by the United Nations organization. The ideal goal of accessibility is "barrier-free", which encourages the public to pay more attention to disabled people and the elderly.
+
+People think about disability generally refers to some obvious permanent disabilities, such as blindness, deafness, and wheelchair mobility. The number of persons with disabilities is related to one-third of households in the country. The population of the disabled is really large.
+
+In addition to these people, the concept of "disability" actually exists widely. For example, when you hold a heavy object with both hands, you cannot use your fingers to touch the screen; or there are some obstructions on your face and the facial recognition function cannot be used. These are situational disabilities or temporary disabilities. Everyone encounters these situational and temporary obstacles almost every day.
+
+There are four main aspects of barrier-free design in web accessibility:  
+
+    1. Visually accessible design
+    2. We have a wide scope of visual barriers. Symptoms of poor vision include blurred vision, hazy vision, high hyperopia or nearsightedness, color blindness, and tube vision. Visually impaired people sometimes have difficulty seeing text or images on the computer screen and performing tasks that require eye and hand cooperation (such as moving a computer mouse).
+    3. Hearing accessible design
+    4. Hearing impairment, also known as impaired hearing, refers to a complete or partial decrease in the ability to sense or understand sounds.
+    5. Mobile accessible design
+    6. Mobility obstacles include users who cannot operate the mouse, keyboard, or touch screen, as well as physically handicapped users in general.
+    7. Cognitive accessible design
+    8. Cognitive impairment includes memory, learning or language ability, attention, emotional control, etc. Cognitive impairment means that users may need assistive technology to help them read text.
+
+## Visual Accessibility
+
+Human beings are integrated bodies that need several components to work together, such as vision, hearing, and touch. Among these components, barrier-free color design is a visual design system for all the public. The final goal of the system is to create a barrier-free visual environment and supply people with the maximum information. The basic idea of barrier-free design is to remove the barriers that make users feel confused and difficult on the user interface and to provide users with the greatest possible convenience.
+
+There are two main types of visual impairment: 
+One is the obstacles caused by low vision, which are divided into total blindness and amblyopia according to the degree of visual impairment; The other type is color vision recognition disorder. We usually call this group of people "Color Blindness" (also known as Dalton's disease, lack of color vision, color vision recognition disorder, color weakness, etc.)
+
+Most people think that traffic lights might be the biggest problem for color blindness. This might not be accurate. The color of the traffic lights might not be a big problem. Because the color of lights is always arranged in a certain order, which makes it available for color blind people to recognize.
+
+However, in daily life, people with color blindness still have some real obstacles:
+
+    • It is not possible to tell whether the meat is cooked or not by its color.
+    • There is no difference between the colors of blank (green) and occupied (red).
+    • Flowers and fruits cannot be easy to find sometimes.
+    • It is not known whether the fruit or vegetable is ripe or immature.
+    • So far, color maps and graphics can sometimes be difficult to understand and understand.
+
+We can follow the following ideas to find solutions:
+
+    • Use multiple visual variables to express information at the same time;
+    • Use color with both brightness and saturation, especially when using red; 
+    • The visual information is not completely distinguished by color, while text and icons are used for annotation.
+
+We will illustrate some applications of these solutions in actual design.
+
+## Examples of Visual Accessibility Design
+
+1. Map application
+
+Red-green color blindness has caused the attention of Map apps to the visual impairment of color maps.
+
+![image](https://user-images.githubusercontent.com/59852184/144951628-744ae702-c186-4fe5-b533-ce7230d3ff64.png)
+
+The barrier-free color matching of the Map app is selected and produced by referring to the visual color spectrum of the red-green blind people, establishing a unique "color matching logic" that is convenient for special people to understand. After switching the color vision accessibility mode, the color vision accessibility map displayed in the red-green color blindness simulation view is no different from the original view, which perfectly meets the reading needs of the red-green color blind people.
 
 
+2. iChat—help color-blind users through graphics
+
+People with color blindness should avoid the situation of conveying important information only in color, not distinguishing visual information completely by color, and using multiple visual variables to express information at the same time (such as shape + color, size + color, annotation + color). Among them, shape includes such usable elements: circles, triangles, rectangles, etc.; solid lines, dashed lines, dotted lines, etc.; letters, number symbols, etc.  
+![image](https://user-images.githubusercontent.com/59852184/144951660-f152898d-eca0-4147-a653-81c04d0a2e13.png)
+
+In ichat's optimized interface design, the principle followed is: use as few colors as possible-combining symbols with different shapes and a small number of bright colors, the effect is far better than using only one shape and multiple colors. Therefore, the optimized and improved interface can transmit enough information, even if there is no color. For example, when a person who is completely color blind is browsing the interface, the interface will not lose any information.
+
+## Summary
+
+Only when the designer understands the types of visually accessible and the cognitive impairments of the color-impaired people, will they know what color scheme can avoid obstacles, and what kind of design can meet the needs of such hidden users.
+
+In addition to the research and exploration of interface color matching, we can even provide a separate color-blind mode switch for color-blind people, which can also take into account the visual beauty and avoid too much information interference. This form also has precedents in games and software. 
+
+We should broaden our horizons and minds, and think about our products and designs from a more tolerant and lofty position, not just for people with color vision disorders, we should unearth more users with obstacles hidden around us, explore more effective ways and methods to improve the efficiency of their interaction with the modern online world.
+
+## References
 
 [1] https://www.w3.org/WAI/fundamentals/accessibility-intro/  
 [2] https://en.wikipedia.org/wiki/Web_accessibility
-
