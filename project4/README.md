@@ -65,7 +65,8 @@ The barrier-free color matching of the Map app is selected and produced by refer
 2. iChat—help color-blind users through graphics
 
 People with color blindness should avoid the situation of conveying important information only in color, not distinguishing visual information completely by color, and using multiple visual variables to express information at the same time (such as shape + color, size + color, annotation + color). Among them, shape includes such usable elements: circles, triangles, rectangles, etc.; solid lines, dashed lines, dotted lines, etc.; letters, number symbols, etc.  
-![image](https://user-images.githubusercontent.com/59852184/144951660-f152898d-eca0-4147-a653-81c04d0a2e13.png)
+
+![1](https://user-images.githubusercontent.com/59852184/144970523-a8489a29-de40-47d4-aae2-5721891730b9.png)
 
 In ichat's optimized interface design, the principle followed is: use as few colors as possible-combining symbols with different shapes and a small number of bright colors, the effect is far better than using only one shape and multiple colors. Therefore, the optimized and improved interface can transmit enough information, even if there is no color. For example, when a person who is completely color blind is browsing the interface, the interface will not lose any information.
 
